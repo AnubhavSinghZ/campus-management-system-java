@@ -2,7 +2,7 @@
 
 A beginner-friendly, single-file Java console application that models a small **Campus Management System** (students, faculty, enrollment, fees, attendance, and grades).
 
-Built specifically to demonstrate every core **Object-Oriented Programming (OOP)** concept from the **AKTU CSE (AI & ML) 2nd Year Java/OOP syllabus** — in one clean, runnable file.
+Built specifically to demonstrate every core **Object-Oriented Programming (OOP)** concept in one clean, runnable file.
 
 ---
 
@@ -121,7 +121,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 🙋 Author
 
-**Your Name**
+
 - GitHub: [@AnubhavSinghZ](https://github.com/AnubhavSinghZ)
 - LinkedIn: [Anubhav Kumar Singh]
 
