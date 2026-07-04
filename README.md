@@ -24,7 +24,7 @@ It's intentionally simple so that every OOP concept is easy to spot and understa
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/<AnubhavSinghZ>/campus-management-system.git
+git clone https://github.com/AnubhavSinghZ/campus-management-system.git
 cd campus-management-system
 
 # 2. Compile
