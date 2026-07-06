@@ -69,10 +69,37 @@ Every concept is also marked with numbered comments directly inside `Main.java`,
 ## 📂 Project Structure
 
 ```
-campus-management-system/
-├── Main.java          # Entire project (all classes + main method)
-├── README.md          # You are here
-└── student_records.txt  # Auto-generated after running the program
+📁 campus-management-system/
+│
+├── 📁 src/                      → All source code lives here
+│   │
+│   ├── 📁 entities/             → Core objects (the "things" in the system)
+│   │   ├── Person.java          → Abstract base class (Student & Faculty inherit from this)
+│   │   ├── Student.java         → Represents a student (inheritance + constructors)
+│   │   ├── Faculty.java         → Represents a faculty member (inheritance)
+│   │   └── Course.java          → Represents a course
+│   │
+│   ├── 📁 interfaces/           → Contracts that classes must follow
+│   │   ├── Payable.java         → For anything that handles fee payments
+│   │   └── Attendable.java      → For anything whose attendance is tracked
+│   │
+│   ├── 📁 services/             → Business logic / core operations
+│   │   ├── EnrollmentService.java   → Handles enrolling & finding students
+│   │   ├── FeeService.java          → Handles fee payments (implements Payable)
+│   │   └── GradeCalculator.java     → Calculates grades (method overloading)
+│   │
+│   ├── 📁 exceptions/           → Custom error handling
+│   │   ├── InvalidGradeException.java     → Thrown for invalid grade values
+│   │   └── EnrollmentFullException.java   → Thrown when class capacity is full
+│   │
+│   ├── 📁 utils/                → Helper/utility classes
+│   │   └── FileHandler.java     → Saves student records to a file
+│   │
+│   └── Main.java                → Entry point — runs the whole demo
+│
+├── README.md                    → Project documentation (you're reading it)
+├── .gitignore                   → Files Git should ignore
+└── LICENSE                      → MIT License
 ```
 
 > Note: In a real-world project, each class (`Student`, `Faculty`, `Payable`, etc.) would live in its own file inside packages like `entities`, `interfaces`, `services`, and `exceptions`. Everything is merged into one file here for simplicity and easy sharing.
